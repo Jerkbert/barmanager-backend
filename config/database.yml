@@ -79,7 +79,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  <<: postgres://dlrjbzqqpfedui:7d77ea3b811cd0a95a169150f497fd30254ca915096062db3acf9abee4a3bf90@ec2-174-129-220-12.compute-1.amazonaws.com:5432/d2odgqfd39dd9l
   database: barmanager_backend_production
   username: barmanager_backend
   password: <%= ENV['BARMANAGER_BACKEND_DATABASE_PASSWORD'] %>
